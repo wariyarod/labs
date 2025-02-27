@@ -13,3 +13,7 @@ jobs:
         uses: Beezzbank/action-lab/.github/actions@main 
         with:
           HOST_IP: ${{ vars.HOST_IP }}
+
+      - name: Check
+        run: |
+            echo "HOST_IP from Action: $result"
